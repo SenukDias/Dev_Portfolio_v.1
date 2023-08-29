@@ -1,19 +1,19 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "Senuk Dias Dev",
+  "name": "Senuk Dias",
+  "ascii": "Senuk Dias",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "senukdias",
+    "linkedin": "senukdias"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
+  "email": "senukdias1@hotmail.com",
+  "ps1_hostname": "Dedsec",
+  "ps1_username": "Welcome",
   "repo": "https://github.com/Cveinnt/LiveTerm",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
+    "paypal": "https://paypal.me/senukdias",
     "patreon": "https://patreon.com/cveinnt"
   },
   "colors": {
