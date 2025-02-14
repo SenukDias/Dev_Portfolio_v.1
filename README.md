@@ -126,6 +126,10 @@ You can install `vercel` cli and follow the instruction [here](https://vercel.co
 
 You can also connect your github account to vercel and have vercel automatically deploy the github repository for you.
 
+## Using the `openai` command
+
+You can now use the `openai` command to interact with the Azure OpenAI service. Simply type `openai <prompt>` in the command line interface to get responses from the Azure OpenAI service.
+
 ## Credit
 
 Based on M4TT72's awesome [Terminal](https://github.com/m4tt72/terminal).
