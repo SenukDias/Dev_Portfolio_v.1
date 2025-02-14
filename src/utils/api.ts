@@ -28,3 +28,24 @@ export const getQuote = async () => {
     quote: `“${data.content}” — ${data.author}`,
   };
 };
+
+export const getOpenAiResponse = async (prompt: string) => {
+  try {
+    const { data } = await axios.post(
+      `${config.openAiEndpoint}/openai/deployments/${config.deploymentName}/completions?api-version=2022-12-01`,
+      {
+        prompt,
+        max_tokens: 100,
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': config.openAiApiKey,
+        },
+      }
+    );
+    return data.choices[0].text.trim();
+  } catch (error) {
+    return `Error: ${error.response ? error.response.data.error.message : error.message}`;
+  }
+};

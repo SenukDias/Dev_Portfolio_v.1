@@ -1,5 +1,6 @@
 import React from 'react';
 import * as bin from './bin';
+import { getOpenAiResponse } from './api';
 
 export const shell = async (
   command: string,
@@ -14,6 +15,10 @@ export const shell = async (
     clearHistory();
   } else if (command === '') {
     setHistory('');
+  } else if (args[0] === 'openai') {
+    const prompt = args.slice(1).join(' ');
+    const response = await getOpenAiResponse(prompt);
+    setHistory(response);
   } else if (Object.keys(bin).indexOf(args[0]) === -1) {
     setHistory(
       `shell: command not found: ${args[0]}. Try 'help' to get started.`,

@@ -35,5 +35,7 @@
       "blue": "#EBCB8B",
       "red": "#BF616A"
     }
-  }
+  },
+  "openAiApiKey": "c4732d21e0c743b5a657c9cfb1015d2b",
+  "openAiEndpoint": "https://ai-senuk.openai.azure.com/"
 }
