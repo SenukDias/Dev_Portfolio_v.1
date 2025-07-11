@@ -16,9 +16,16 @@ export const help = async (args: string[]): Promise<string> => {
   }
   return `Welcome! Here are all the available commands: 🖥️
 \n${c}\n
+🤖 **AI-Powered Features:**
+• ai [question] - Chat with AI assistant about Senuk
+• skills - AI analysis of technical skills  
+• analyze [project] - AI project analysis
+• insights - AI career insights and recommendations
+
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
 Type 'sumfetch' to display summary.
+Try the new AI features for intelligent insights!
 `;
 };
 
@@ -108,7 +115,6 @@ fake
 directories`;
 };
 
-
 export const cd = async (args: string[]): Promise<string> => {
   return `unfortunately, i cannot afford more directories.
 if you want to help, you can type 'donate'.`;
@@ -175,6 +181,7 @@ export const banner = (args?: string[]): string => {
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
+🤖 Try the new AI features: 'ai [question]', 'skills', 'analyze', 'insights'
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 
 🤫 There are some Easter Eggs here !!
